@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Not Found!!!</title>
+</head>
+<body>
+    <h1>Page Not Found!!!</h1>
+    <script>
+        var path = window.location.pathname;
+        if (path.startsWith('/404/')) {
+            // 如果是对 .well-known 目录的请求，则返回对应的文件
+            var file = path.substring('/404/'.length);
+            if (file.startsWith('.well-known/')) {
+                // 假设你有一个 .well-known 目录在你的 gh-pages 分支
+                window.location.href = 'https://jinlingguaiguai.github.io' + file;
+            }
+        }
+    </script>
+</body>
+</html>
