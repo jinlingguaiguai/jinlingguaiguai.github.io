@@ -8,12 +8,11 @@
         var path = window.location.pathname;
         console.log('path=' + path);
         if (path.startsWith('/.well-known/')) {
+            console.log('11111');
             // 如果是对 .well-known 目录的请求，则返回对应的文件
             var file = path.substring('/.well-known/'.length);
-            if (file.startsWith('.well-known/')) {
-                console.log('file=' + file);
-                window.location.href = 'https://jinlingguaiguai.github.io/' + file;
-            }
+            console.log('file=' + file);
+            window.location.href = 'https://jinlingguaiguai.github.io/' + file;
         }
     </script>
 </body>
