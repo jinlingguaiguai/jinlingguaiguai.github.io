@@ -4,7 +4,7 @@
         "details": [
             {
                 "appID": "ZDSAJKCBDL.demo.com.jsgxca.mobileweixinpay",
-                "paths": ["*"]
+                "paths": ["/app01/*"]
             }
         ]
     }
