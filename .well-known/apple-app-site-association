@@ -1,9 +1,10 @@
-"applinks": {
+{
+    "applinks": {
         "apps": [],
         "details": [
             {
                 "appID": "ZDSAJKCBDL.demo.com.jsgxca.mobileweixinpay",
-                "paths": [ "/*"]
+                "paths": ["*"]
             }
         ]
     }
